@@ -32,7 +32,6 @@ class Config:
 
 
 class TrafficDataset(Dataset):
-    """Extract windows on demand, preserving temporal and node dimensions."""
     def __init__(self, data, origins, spec, input_scaler, output_scaler, flow_index=0,
                  month_centers=None):
         self.data, self.origins, self.spec = data, origins, spec
